@@ -1,0 +1,1165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Alegreya';
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 2rem;
+}
+
+:root {
+    --primary-color--: #ffffff;
+    --secondry-color--: #C8191C;
+}
+
+.main-title {
+    color: var(--primary-color--);
+    text-align: center;
+    font-size: 13rem;
+    font-weight: 700;
+    line-height: 16rem;
+}
+
+.red-title {
+    color: var(--secondry-color--);
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.sub-title {
+    color: var(--primary-color--);
+    font-size: 8.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content-btn {
+    display: flex;
+    width: 30rem;
+    height: 6.3rem;
+    padding: 1.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background: var(--secondry-color--);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.content-btn:hover {
+    background-color: var(--primary-color--);
+    color: var(--secondry-color--);
+}
+
+
+/**************header***********/
+header {
+    position: fixed;
+    top: 3.5rem;
+    width: 100%;
+    z-index: 1;
+}
+
+header nav ul {
+    justify-content: space-between;
+    display: flex;
+}
+
+header .container nav ul li {
+    display: inline-block;
+    margin-left: 3rem;
+}
+
+header ul li a {
+    color: var(--primary-color--);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    color: var(--secondry-color--);
+}
+
+/*****************************/
+/***********hero***************/
+#hero {
+    width: 100%;
+    height: 132rem;
+    background: linear-gradient(180deg, #000 36.84%, #C8191C 223.16%);
+    position: relative;
+}
+
+#hero::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 110rem;
+    background-image: url(../image/circle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.1;
+    z-index: 0;
+}
+
+.hero-data {
+    max-width: 156.7rem;
+    z-index: 3;
+    height: 60rem;
+
+}
+
+.hero-data h1 {
+    padding-top: 47.6rem;
+}
+
+.hero-data h1 span {
+    color: var(--secondry-color--);
+}
+
+.hero-data p {
+    margin: 3rem auto 5rem;
+    text-align: center;
+    width: 76.7rem;
+    color: var(--primary-color--);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.hero-data .content-btn {
+    margin: 0 auto;
+    z-index: 999;
+}
+
+/******************************/
+/*************about***********/
+#about {
+    background: linear-gradient(0deg, #000 16.49%, #C8191C 274.79%);
+    padding-top: 5rem;
+}
+
+.about-data {
+    justify-content: space-between;
+    row-gap: 2rem;
+    margin-bottom: 20rem;
+}
+
+.about-data img {
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+}
+
+.about-data h3 {
+    color: var(--primary-color--);
+    text-align: center;
+    font-size: 5.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+
+.about-detail {
+    justify-content: space-between;
+}
+
+.about-detail img {
+    height: 50rem;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.about-img {
+    padding-right: 8rem;
+    margin-bottom: 9.5rem;
+}
+
+.deti-data p {
+    color: var(--secondry-color--);
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 1.8rem;
+}
+
+.deti-data h2 {
+    color: var(--primary-color--);
+    font-size: 8.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 11.8rem;
+}
+
+.deti-data {
+    max-width: 100%;
+    padding-left: 8rem;
+}
+
+.deti-data a {
+    margin-top: 7rem;
+}
+
+.content-btn {
+    color: var(--primary-color--);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.content-btn {
+    margin-top: 8.2rem;
+}
+
+.about-detail .deti-title {
+    color: var(--primary-color--);
+    font-size: 1.8rem;
+    font-weight: 400;
+    max-width: 100%;
+    padding-right: 12rem;
+}
+
+.border-end {
+    height: 50rem;
+    color: var(--primary-color--);
+}
+
+/******************************/
+
+/***********super**************/
+#super {
+    background: linear-gradient(180deg, #000 37.37%, #C8191C 231.27%);
+    padding-top: 20rem;
+    padding-bottom: 12rem;
+}
+
+.super-img .col-lg-3 .col-md-6 {
+    padding: 0;
+}
+
+.super-data .main-title {
+    text-align: left;
+}
+
+.super-box .super-img {
+    padding-left: 5.6rem;
+}
+
+.team-img img {
+    height: 33.6rem;
+}
+
+.super-data p {
+    color: var(--primary-color--);
+    font-size: 1.8rem;
+    font-weight: 400;
+    max-width: 48.5rem;
+}
+
+.super-data h2 {
+    padding-bottom: 11rem;
+    color: var(--primary-color--);
+    font-size: 11rem;
+    font-weight: 700;
+    line-height: 16rem;
+}
+
+.super-box h3 {
+    color: var(--primary-color--);
+    font-size: 12rem;
+    font-weight: 700;
+    padding-top: 5rem;
+    word-spacing: 3rem;
+}
+
+/******************************/
+
+/************service***********/
+#service {
+    background: linear-gradient(0deg, #000 16.49%, #C8191C 274.79%);
+}
+
+#service .sub-title {
+    padding-bottom: 10rem;
+}
+
+.service-box {
+    padding: 0 4.2rem;
+}
+
+.forcast-pack {
+    margin-right: 7.2rem;
+    padding: 5rem 6rem;
+}
+
+.reports-pack {
+    margin-left: 7.2rem;
+    padding: 5rem 6rem;
+}
+
+.reading-pack {
+    padding: 5rem 6rem;
+    margin: 15rem 7.2rem 15rem 0;
+}
+
+.love-pack {
+    margin-left: 7.2rem;
+    padding: 5rem 6rem;
+    margin: 15rem 0 15rem 7.2rem;
+}
+
+.service-box h4 {
+    color: var(--primary-color--);
+    font-size: 4.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 3rem;
+}
+
+.service-box p {
+    color: var(--primary-color--);
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding-top: 2rem;
+}
+
+/******************************/
+
+/************why**************/
+#why {
+    background: linear-gradient(180deg, #000 36.84%, #C8191C 223.16%);
+}
+
+.why-box {
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 19.8rem;
+    padding: 10rem;
+}
+
+.why-data img {
+    margin: 0 auto;
+}
+
+.why-box h3 {
+    padding-bottom: 15rem;
+}
+
+.why-data h4 {
+    color: var(--primary-color--);
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.why-data p {
+    color: var(--primary-color--);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+/******************************/
+/**********Horoscope************/
+#horoscope {
+    background: linear-gradient(0deg, #000 16.49%, #C8191C 274.79%);
+}
+
+.first-zodic {
+    padding: 10rem 0;
+}
+
+.second-zodic {
+    padding-bottom: 11.5rem;
+}
+
+.aris-box {
+    display: flex;
+}
+
+.horo-box h4 {
+    color: var(--primary-color--);
+    font-size: 5.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.horo-box p {
+    color: var(--primary-color--);
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.aris-data {
+    padding: 1rem 1rem 2rem 3rem;
+}
+
+.horo-box a {
+    margin: 0 auto;
+}
+
+.horo-box .col-xxl-3 {
+    margin-right: 9rem;
+}
+
+.counting-box {
+    padding-top: 20rem;
+    justify-content: space-between;
+}
+
+#horoscope .counting-box h5 {
+    color: var(--secondry-color--);
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#horoscope .counting-box h2 {
+    color: var(--primary-color--);
+    font-size: 8rem;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.horo-box .col-xxl-3 {
+    margin-right: 0;
+}
+
+/******************************/
+
+/**********Appointment*********/
+#appointment {
+    padding-top: 20rem;
+    background: linear-gradient(180deg, #000 36.84%, #C8191C 223.16%);
+}
+
+.appo-box h2 {
+    text-align: left;
+}
+
+.appo-box h3 {
+    text-align: left;
+}
+
+.appo-sub h4 {
+    color: var(--primary-color--);
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+}
+
+.appo-sub input {
+    background: transparent;
+    height: 10rem;
+    width: 48rem;
+    padding: 1rem 3rem;
+    align-items: center;
+    color: var(--primary-color--);
+    font-size: 4rem;
+}
+
+.appo-sub select {
+    background: transparent;
+    height: 10rem;
+    width: 48rem;
+    align-items: center;
+    color: var(--primary-color--);
+    font-size: 4rem;
+    padding: 1rem 3rem;
+}
+
+.appo-sub select option {
+    font-size: 2rem;
+}
+
+.appo-data {
+    padding: 20rem 0;
+}
+
+.appo-deti {
+    padding-bottom: 8rem;
+}
+
+/******************************/
+/*********membership***********/
+#membership {
+    background: linear-gradient(180deg, #514242 -74.63%, #2E0A0A 38.7%, #000 151.34%);
+    position: relative;
+}
+#membership::before {
+    content: '';
+    position: absolute;
+    width: 81%;
+    height: 48.6rem;
+    background-image: url(../image/member.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.1;
+    left: 20rem;
+    z-index: 0;
+}
+
+.member-box {
+    padding: 10rem 0;
+    text-align: center;
+    z-index: 1;
+}
+
+.member-box p {
+    color: var(--primary-color--);
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 2rem 0 5rem 0;
+}
+.member-box a{
+    margin: 0 auto;
+    z-index: 1;
+}
+
+/******************************/
+
+/************swiper***********/
+#clients {
+    background: linear-gradient(0deg, #000 36.84%, #C8191C 223.16%);
+    padding-top: 20rem;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.mySwiper {
+    padding: 0 4.8rem;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swip-data {
+    padding: 0 10rem;
+    position: relative;
+    z-index: 9;
+}
+
+.swip-info::before {
+    content: '';
+    inset: 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    background-image: url(../image/invited.png);
+    opacity: 5.4;
+    margin-top: 60rem;
+    margin-left: 8rem;
+}
+
+.swiper-slide img {
+    display: block;
+    height: 63.1rem;
+    object-fit: cover;
+    width: 46.5rem;
+    padding-bottom: 7.7rem;
+}
+
+#clients h3 {
+    font-size: 14rem;
+}
+
+.clint-arrow {
+    margin: 0 auto;
+    padding: 10rem 0;
+}
+
+.swip-info {
+    width: 46.5rem;
+}
+
+.swip-info p {
+    color: var(--primary-color--);
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+.swip-info h5 {
+    color: var(--primary-color--);
+    font-size: 2.4rem;
+    font-weight: 400;
+    text-align: left;
+}
+
+/******************************/
+
+/*****************media********/
+@media screen and (max-width:575px) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .about-data {
+        justify-content: center;
+    }
+
+    .about-data h3 {
+        font-size: 3.4rem;
+    }
+
+    .about-img {
+        padding-right: 0;
+    }
+
+    .deti-data {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .deti-data a {
+        margin: 0 auto;
+    }
+
+    .about-detail .about-img p {
+        align-items: center;
+    }
+
+    .about-detail .deti-title {
+        padding: 0;
+        text-align: center;
+    }
+
+    .deti-data h2 {
+        line-height: 10.2rem;
+        padding-bottom: 5rem;
+    }
+
+    .about-detail .about-img .border-end {
+        border-right: none;
+    }
+
+    .team-img img {
+        height: 87rem;
+    }
+
+    .super-box .super-img {
+        padding-left: 0rem;
+    }
+
+    .super-box {
+        text-align: center;
+    }
+
+
+    .super-data h2 {
+        padding-bottom: 0;
+        font-size: 8rem;
+    }
+
+    .super-data p {
+        margin: 0 auto;
+        padding-bottom: 3rem;
+    }
+
+    .service-box {
+        row-gap: 4rem;
+    }
+
+    .forcast-pack {
+        margin-right: 0;
+        padding: 5rem 6rem;
+    }
+
+    .reports-pack {
+        margin-left: 0;
+        padding: 5rem 6rem;
+    }
+
+    .reading-pack {
+        padding: 5rem 6rem;
+        margin: 0;
+    }
+
+    .love-pack {
+        margin-left: 0;
+        padding: 5rem 6rem;
+        margin: 0;
+    }
+
+    .super-box h3 {
+        font-size: 8rem;
+    }
+
+    #horoscope .counting-box h2 {
+        padding-bottom: 4rem;
+    }
+
+    .horo-box .col-xxl-3 {
+        margin-right: 0;
+    }
+
+    .aris-data {
+        padding: 1rem 1rem 2rem 1rem;
+    }
+
+    .aris-box {
+        display: block;
+        width: 33%;
+        margin: 0 auto
+    }
+
+    .first-zodic {
+        padding: 10rem 0 0 0;
+    }
+}
+
+/* sm */
+@media screen and (min-width:576px) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .about-data {
+        justify-content: center;
+    }
+
+    .about-data h3 {
+        font-size: 3.9rem;
+    }
+
+    .about-data img {
+        max-width: 45%;
+    }
+
+    .about-img {
+        padding-right: 0;
+    }
+
+    .deti-data {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .deti-data a {
+        margin: 0 auto;
+    }
+
+    .about-detail .deti-title {
+        padding: 0;
+        text-align: center;
+    }
+
+    .deti-data h2 {
+        line-height: 10.2rem;
+        padding-bottom: 5rem;
+    }
+
+    .about-detail .about-img .border-end {
+        border-right: none;
+    }
+
+    .super-box .super-img {
+        padding-left: 0rem;
+    }
+
+    .super-box {
+        text-align: center;
+    }
+
+    .super-data h2 {
+        padding-bottom: 0;
+        font-size: 7rem;
+    }
+
+    .super-data p {
+        margin: 0 auto;
+        padding-bottom: 3rem;
+    }
+
+    .service-box {
+        row-gap: 4rem;
+    }
+
+    .forcast-pack {
+        margin-right: 0;
+        padding: 5rem 6rem;
+    }
+
+    .reports-pack {
+        margin-left: 0;
+        padding: 5rem 6rem;
+    }
+
+    .reading-pack {
+        padding: 5rem 6rem;
+        margin: 0;
+    }
+
+    .love-pack {
+        margin-left: 0;
+        padding: 5rem 6rem;
+        margin: 0;
+    }
+
+    .why-box {
+        justify-content: center;
+    }
+
+    .team-img img {
+        height: 87rem;
+    }
+
+    .super-box h3 {
+        font-size: 8rem;
+    }
+
+    #horoscope .counting-box h2 {
+        padding-bottom: 4rem;
+    }
+
+    .horo-box .col-xxl-3 {
+        margin-right: 0;
+    }
+
+    .aris-data {
+        padding: 1rem 1rem 2rem 1rem;
+    }
+
+    .aris-box {
+        display: block;
+        width: 33%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .first-zodic {
+        padding: 10rem 0 0 0;
+    }
+}
+
+/* md */
+@media screen and (min-width:768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    .about-data h3 {
+        font-size: 4.4rem;
+    }
+
+    .about-data img {
+        max-width: 48%;
+    }
+
+    .super-data h2 {
+        font-size: 7rem;
+    }
+
+    .team-img img {
+        height: 51rem;
+    }
+
+    .super-data p {
+        padding-bottom: 3rem;
+    }
+
+    .super-box h3 {
+        font-size: 9rem;
+    }
+
+    .aris-box {
+        display: block;
+        width: 100%;
+        margin: none;
+        text-align: left;
+    }
+
+    .first-zodic {
+        padding: 10rem 0;
+    }
+}
+
+/* lg */
+@media screen and (min-width:992px) {
+    .about-data img {
+        max-width: 50%;
+    }
+
+    .about-img {
+        padding-right: 4rem;
+    }
+
+    .deti-data {
+        padding-left: 3rem;
+        text-align: left;
+    }
+
+    .deti-data a {
+        margin: 0;
+    }
+
+    .about-detail .about-img p {
+        align-items: left;
+    }
+
+    .about-detail .deti-title {
+        padding-right: 12rem;
+        text-align: left;
+    }
+
+    .deti-data h2 {
+        line-height: 11.2rem;
+        font-size: 7rem;
+        padding-bottom: 10rem;
+    }
+
+    .team-img img {
+        height: 33.6rem;
+    }
+
+    .super-box {
+        text-align: left;
+    }
+
+    .super-data h2 {
+        padding-bottom: 5rem;
+        font-size: 7rem;
+    }
+
+    .super-data p {
+        margin: 0;
+        padding-bottom: 0;
+    }
+
+    .service-box {
+        padding: 0 4.2rem;
+    }
+
+    .service-box {
+        row-gap: 0;
+    }
+
+    .forcast-pack {
+        margin-right: 4.2rem;
+        padding: 3rem 3rem;
+    }
+
+    .reports-pack {
+        margin-left: 4.2rem;
+        padding: 3rem 3rem;
+    }
+
+    .reading-pack {
+        padding: 3rem 3rem;
+        margin: 15rem 7.2rem 15rem 0;
+    }
+
+    .love-pack {
+        margin-left: 4.2rem;
+        padding: 3rem 3rem;
+        margin: 15rem 0 15rem 7.2rem;
+    }
+
+    .why-box {
+        justify-content: space-between;
+    }
+
+    .super-box h3 {
+        font-size: 8rem;
+        padding-top: 0;
+    }
+
+    #horoscope .counting-box h2 {
+        padding-bottom: 0;
+    }
+
+    .horo-box h4 {
+        font-size: 4rem;
+    }
+
+    .aris-box {
+        display: flex;
+    }
+
+}
+
+/* xl */
+@media screen and (min-width:1200px) {
+
+    .about-data h3 {
+        font-size: 5.4rem;
+    }
+
+    .about-data img {
+        max-width: 100%;
+    }
+
+    .about-img {
+        padding-right: 8rem;
+    }
+
+    .deti-data {
+        padding-left: 8rem;
+    }
+
+    .deti-data h2 {
+        font-size: 8rem;
+    }
+
+    .super-data h2 {
+        padding-bottom: 11rem;
+        font-size: 9rem;
+    }
+
+    .service-box {
+        padding: 0 4.2rem;
+    }
+
+    .forcast-pack {
+        margin-right: 7.2rem;
+        padding: 4rem 5rem;
+    }
+
+    .reports-pack {
+        margin-left: 7.2rem;
+        padding: 4rem 5rem;
+    }
+
+    .reading-pack {
+        padding: 4rem 5rem;
+        margin: 15rem 7.2rem 15rem 0;
+    }
+
+    .love-pack {
+        margin-left: 7.2rem;
+        padding: 4rem 5rem;
+        margin: 15rem 0 15rem 7.2rem;
+    }
+
+    .super-box h3 {
+        font-size: 10rem;
+        padding-top: 5rem;
+    }
+
+    .aris-data {
+        padding: 1rem 1rem 2rem 3rem;
+    }
+
+    .horo-box h4 {
+        font-size: 5.4rem;
+    }
+
+}
+
+/* xxl */
+@media screen and (min-width:1400px) {
+    .about-data {
+        justify-content: space-between;
+    }
+
+    .about-img {
+        padding-right: 8rem;
+    }
+
+    .deti-data {
+        padding-left: 8rem;
+    }
+
+    .deti-data h2 {
+        font-size: 8.4rem;
+    }
+
+    .super-data h2 {
+        padding-bottom: 11rem;
+        font-size: 10rem;
+    }
+
+    .service-box {
+        padding: 0 4.2rem;
+    }
+
+    .forcast-pack {
+        margin-right: 7.2rem;
+        padding: 5rem 6rem;
+    }
+
+    .reports-pack {
+        margin-left: 7.2rem;
+        padding: 5rem 6rem;
+    }
+
+    .reading-pack {
+        padding: 5rem 6rem;
+        margin: 15rem 7.2rem 15rem 0;
+    }
+
+    .love-pack {
+        margin-left: 7.2rem;
+        padding: 5rem 6rem;
+        margin: 15rem 0 15rem 7.2rem;
+    }
+
+    .super-box h3 {
+        font-size: 10rem;
+    }
+
+    .horo-box .col-xxl-3 {
+        margin-right: 9rem;
+    }
+}
+
+@media screen and (min-width:1800px) {
+    .container {
+        max-width: 1700px;
+    }
+
+    .super-data h2 {
+        padding-bottom: 11rem;
+        font-size: 11rem;
+    }
+
+    .super-img .col-lg-3 .col-md-6 .col-12 {
+        padding: 0;
+    }
+
+    .super-box h3 {
+        font-size: 11rem;
+    }
+
+}
+
+/******************************/
